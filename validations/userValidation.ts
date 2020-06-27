@@ -12,16 +12,6 @@ const UserSchema = Schema({
 type UserType = Type<typeof UserSchema>;
 const validator = UserSchema.destruct();
 
-// const [err, user] = validator({
-//   name: 'patrick',
-//   username: 'john',
-//   status: 'active',
-//   age: 20,
-// });
-
-// if(err) console.log(err?.errors![0].error.message);
-// console.log(user);
-
 export {
   UserType,
   validator
