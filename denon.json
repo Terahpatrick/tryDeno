@@ -1,0 +1,36 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "scripts": {
+    "start": {
+      "cmd": "deno run main.ts",
+      "desc": "run my main.ts file",
+      "unstable": true,
+      "fmt": false,
+      "test": true,
+
+      "allow": [
+        "run", 
+        "net",
+        "read",
+        "write",
+        "plugin",
+        "env"
+      ]
+    }
+  },
+
+  "watcher": {
+    "interval": 500,
+    "exts": ["js", "jsx", "ts", "tsx", "json"],
+    "match": ["*.*"],
+    "skip": ["*/.git/*"],
+    "legacy": false
+  },
+
+  "logger": {
+    "fullscreen": false,
+    "quiet": false,
+    "debug": true
+  }
+}
+
